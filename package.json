@@ -1,15 +1,29 @@
 {
-  "name": "koa-connect",
-  "version": "1.0.0",
-  "description": "Use connect and express middleware in koa",
+  "name": "koa-express",
+  "version": "1.1.0",
+  "description": "Use express middleware in koa",
   "main": "index.js",
-  "author": "Vladimir Kurchatkin <vladimir.kurchatkin@gmail.com>",
-  "respository": "vkurchatkin/koa-connect",
+  "scripts": {
+    "lint": "eslint spec.js index.js",
+    "test": "mocha spec.js"
+  },
+  "author": "Doug Moscrop <doug.moscrop@gmail.com>",
+  "contributors": [
+    {
+      "name": "Vladimir Kurchatkin",
+      "email": "vladimir.kurchatkin@gmail.com>"
+    }
+  ],
+  "respository": "dougmoscrop/koa-express",
   "license": "MIT",
   "devDependencies": {
-    "koa": "^0.10.0"
+    "eslint": "^1.6.0",
+    "koa": "^0.10.0",
+    "mocha": "^2.3.3",
+    "supertest": "^1.1.0"
   },
   "dependencies": {
-    "connect": "^2.25.7"
+    "array-flatten": "^1.1.1",
+    "koa-compose": "^2.3.0"
   }
 }

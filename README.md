@@ -1,26 +1,27 @@
-# koa-connect
+# koa-express
 
-Use connect and express middleware in koa
+Use express (and connect) middleware in koa
 
 # Install
 
 ```bash
-npm install koa-connect
+npm install koa-express
 ```
 
 # Usage:
 
 ```javascript
 var koa = require('koa');
-var c2k = require('koa-connect');
+var express = require('koa-express');
+
 var app = koa();
 
 function middleware (req, res, next) {
-  console.log('connect');
+  console.log('express');
   next();
 }
 
-app.use(c2k(middleware));
+app.use(express(middleware));
 
 app.use(function * () {
   this.body = 'koa';
@@ -28,7 +29,6 @@ app.use(function * () {
 
 app.listen(3000);
 ```
-
 
 # License
 

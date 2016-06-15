@@ -14,7 +14,14 @@
       "email": "vladimir.kurchatkin@gmail.com>"
     }
   ],
-  "respository": "dougmoscrop/koa-express",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dougmoscrop/koa-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dougmoscrop/koa-express/issues"
+  },
+  "homepage": "https://github.com/dougmoscrop/koa-express",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^1.6.0",
